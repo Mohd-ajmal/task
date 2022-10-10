@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class EmpText extends StatelessWidget {
   EmpText({Key? key, required this.name, required this.vale}) : super(key: key);
   String name;

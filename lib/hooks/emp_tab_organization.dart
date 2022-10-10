@@ -3,6 +3,7 @@ import 'package:task/constants/strings.dart';
 import 'package:task/hooks/emp_text.dart';
 import 'package:task/models/model_emp.dart';
 
+// ignore: must_be_immutable
 class EmpOrganizationTab extends StatelessWidget {
   EmpOrganizationTab({Key? key, required this.wValue}) : super(key: key);
 

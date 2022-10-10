@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:task/constants/images.dart';
 
+// ignore: must_be_immutable
 class RepoListView extends StatelessWidget {
   RepoListView(
       {Key? key,

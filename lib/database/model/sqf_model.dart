@@ -1,4 +1,4 @@
-final String tableEmp = 'emp';
+const String tableEmp = 'emp';
 
 class EmpFields {
   static final List<String> values = [

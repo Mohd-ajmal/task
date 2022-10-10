@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:task/screens/employee/employee.dart';
+import 'package:task/screens/mail/mail.dart';
 
 import 'package:task/screens/repo/repo.dart';
 import 'package:task/view_models/employee_details/vm_emp_details.dart';
 import 'package:task/view_models/github_repo/vm_github.dart';
+import 'package:task/view_models/mail/vm_mail.dart';
 
 class VmBottomNavigation extends ChangeNotifier {
   // ----------------------------------- Getters -------------------------------
@@ -14,7 +16,7 @@ class VmBottomNavigation extends ChangeNotifier {
 
   int _selectedIndex = 0;
 
-  //
+  // ---------------------------------- Implementations ------------------------
 
   void onItemTapped(int index) {
     _selectedIndex = index;
@@ -31,7 +33,9 @@ class VmBottomNavigation extends ChangeNotifier {
             create: (BuildContext context) => VmEmployeeDetails(),
             child: const EmployeeDetailsScreen());
       default:
-        return const Center(child: Text("Notification"));
+        return ChangeNotifierProvider(
+            create: (BuildContext context) => MailViewModal(),
+            child: const MailScreen());
     }
   }
 }

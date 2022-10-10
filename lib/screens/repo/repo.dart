@@ -34,6 +34,7 @@ class _RepoState extends State<Repo> {
     var provider = Provider.of<VmGithub>(context);
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: SvgPicture.asset(
           Images.gitHub,
           color: Colors.white,
